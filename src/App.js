@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import QuizCard from './components/QuizCard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-row items-center mt-20 gap-6">
+      <h1 className="text-3xl font-bold">Trivia Quiz App</h1>
+      <QuizCard />
     </div>
   );
 }
